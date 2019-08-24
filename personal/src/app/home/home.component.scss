@@ -1,0 +1,37 @@
+.page {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hero {
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+
+    img {
+        height: 500px;
+        transition: transform 0.3s ease-out;
+        cursor: pointer;
+    }
+
+    &:hover {
+        .model-right, .model-left{
+            transform: translate(0%,0%)
+        }
+    }
+}
+
+.model-left {
+    transform: translate(0%, -5%)
+}
+
+.model-right {
+    transform: translate(0%, 5%)
+}
+
+.details {
+    grid-column: 1/2;
+    align-self: end;
+}
