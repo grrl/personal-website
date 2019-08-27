@@ -156,3 +156,39 @@
       width: 70px;
     }
   }
+
+  #projects {
+    height: 100vh;
+
+    h1 {
+      color: #F7F5F5;
+      margin-bottom: 100px;
+    }
+  }
+
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  .projects-wrapper:nth-child(2n) {
+    align-self: end;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+
+      span {
+        display: inline-block;
+        margin: 12px 0;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+
+  }
