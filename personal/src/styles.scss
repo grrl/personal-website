@@ -65,6 +65,7 @@ h4 {
     font-size: 20px;
     font-family: MontserratBold;
     line-height: 24px;
+    text-transform: uppercase;
 }
 
 p {
@@ -78,4 +79,13 @@ a {
     text-decoration: none;
     color: #000000;
     font-family: MontserratSemiBold;
+}
+
+.btn {
+    background: none;
+    border: 4px solid #F7F5F5;
+    color: #F7F5F5;     
+    padding: 10px;  
+    font-family: MontserratBold;
+    cursor: pointer;
 }
