@@ -1,10 +1,12 @@
+@import "../app.component.scss";
+
 footer {
     position: absolute;
     height: 100vh;
     right: 0;
     left: 0;
     margin-top: 150px;
-    background-color: #191919;
+    background-color: $light-black;
     padding: 0 10%;
 
     h1 {
@@ -12,11 +14,11 @@ footer {
         top: 35%;
         left: 13%;
         transform: translate(-13%, -35%);
-        color: rgba(78, 78, 80, 0.35);
+        color: rgba($medium-gray, 0.15);
     }
 
     h4, p {
-        color: #F7F5F5;
+        color: $light-white;
     }
 
     .footer-text {

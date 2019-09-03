@@ -1,0 +1,24 @@
+@import "../app.component.scss";
+
+section {
+    height: 65vh;
+}
+
+div {
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top:0;
+}
+
+.form {
+    right: 0;
+    background-color: $pink;
+}
+
+.content {
+    margin-top: 100px;
+    h1 {
+        color: $white-smoke;
+    }
+}
