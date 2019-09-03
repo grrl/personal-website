@@ -1,3 +1,5 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 @font-face {
     font-family: MontserratBlack;
     src: url('assets/font/Montserrat-Black.ttf')
@@ -71,7 +73,7 @@ h4 {
 p {
     font-size: 22px;
     font-family: MontserratRegular;
-    letter-spacing: (10/1000)em;;
+    letter-spacing: .1em;
     line-height: 33px;
 }
 

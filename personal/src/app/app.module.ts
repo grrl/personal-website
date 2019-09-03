@@ -10,6 +10,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectComponent } from './project/project.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +22,15 @@ import { ProjectComponent } from './project/project.component';
     ContactComponent,
     FooterComponent,
     HeaderComponent,
-    ProjectComponent
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
