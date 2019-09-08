@@ -1,42 +1,53 @@
 <main>
-    <section>
-        <div>
-            <div class="content">
-                <h1>Get in <br>Touch</h1>
-                <h4>Address</h4>
-                <p>220 José Roberto Pereira St, BR</p>
-                <h4>Number</h4>
-                <p>+55 31 9 87691376</p>
-                <h4>E-mail</h4>
-                <p>deizianens@gmail.com</p>
-            </div>
+  <section>
+    <div class="wrapper">
+      <div class="half">
+        <div class="content">
+          <h1>Get in <br />Touch</h1>
+          <h4>Address</h4>
+          <p>220 José Roberto Pereira St, BR</p>
+          <h4>Number</h4>
+          <p>+55 31 9 87691376</p>
+          <h4>E-mail</h4>
+          <p>deizianens@gmail.com</p>
         </div>
-        <div class="form">
-            <div class="content">
-                <div class="form-container">
-                    <mat-form-field>
-                        <input matInput placeholder="NAME">
-                    </mat-form-field>
+      </div>
+      <div class="half form">
+        <div class="content">
+          <div class="form-container">
+            <mat-form-field>
+              <input matInput placeholder="NAME" />
+            </mat-form-field>
 
-                    <mat-form-field>
-                        <input matInput placeholder="E-MAIL" [formControl]="email" required>
-                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-                    </mat-form-field>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="E-MAIL"
+                [formControl]="email"
+                required
+              />
+              <mat-error *ngIf="email.invalid">{{
+                getErrorMessage()
+              }}</mat-error>
+            </mat-form-field>
 
-                    <mat-form-field>
-                        <mat-label>MESSAGE</mat-label>
-                        <textarea matInput
-                            cdkTextareaAutosize
-                            #autosize="cdkTextareaAutosize"
-                            cdkAutosizeMinRows="2"
-                            cdkAutosizeMaxRows="5"></textarea>
-                    </mat-form-field>
+            <mat-form-field>
+              <mat-label>MESSAGE</mat-label>
+              <textarea
+                matInput
+                cdkTextareaAutosize
+                #autosize="cdkTextareaAutosize"
+                cdkAutosizeMinRows="2"
+                cdkAutosizeMaxRows="5"
+              ></textarea>
+            </mat-form-field>
 
-                    <button class="btn">
-                        SEND MESSAGE
-                    </button>
-                </div>
-            </div>
+            <button class="btn">
+              SEND MESSAGE
+            </button>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </main>

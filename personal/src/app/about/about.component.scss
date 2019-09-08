@@ -1,7 +1,7 @@
 @import "../app.component.scss";
 
 #about {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     padding-top: 50px;
     display: flex;
@@ -14,8 +14,20 @@
     h4 {
         margin: 20px 0;
     }
+
+    P {
+        margin-bottom: 100px;
+    }
 }
 
 .about-left {
     width: 65%;
+}
+
+#timeline {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    left: -190px;
+    background-color: $light-gray;
 }

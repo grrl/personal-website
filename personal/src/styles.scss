@@ -26,22 +26,15 @@
     box-sizing: border-box;
 }
 
-.clearfix {
-    &:after{
-        content: "";
-        clear: both;
-        display: table;
-    }
-}
-
 html {
     font-family: MontserratRegular;
 }
 
 body {
-    width: 75%;
+    width: 100vw;
     margin: auto;
     color: #4E4E50;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -90,4 +83,9 @@ a {
     padding: 10px;  
     font-family: MontserratBold;
     cursor: pointer;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 75%;
 }
