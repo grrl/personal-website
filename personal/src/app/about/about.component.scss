@@ -30,8 +30,59 @@
 
 .timeline {
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
+    
+    .title {
+        margin-top: 100px;
+        flex-basis: 100%
+    }
 }
+
+
+.languages {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0;
+    width: 100%;
+   
+}
+
+.languages-item {
+    flex:1;
+    padding: 0 1rem;
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    & + & {
+      border-left: 1px solid $border-light;
+    }
+}
+
+
+  .level{
+    line-height: 2px;
+    margin: 10px 0;
+    font-size: type-scale(0);
+  }
+  
+  .level-circle {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0 2px;
+    
+    &:before {
+      content: '\2B24';
+      color: $aquamarine;
+    }
+    
+    &.inactive:before {
+      color: $border-light;
+    }
+  }
 
 .rect {
     flex: 1;   
@@ -42,6 +93,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+
 
     h4 {
         margin: 10px 0;
@@ -49,5 +102,8 @@
 
     }
 
+    span {
+        font-style: italic;
+    }
     
 }
