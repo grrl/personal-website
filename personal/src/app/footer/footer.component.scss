@@ -12,8 +12,8 @@ footer {
     h1 {
         position: absolute;
         top: 35%;
-        left: 13%;
-        transform: translate(-13%, -35%);
+        left: 15%;
+        transform: translate(-15%, -35%);
         color: rgba($medium-gray, 0.15);
     }
 
@@ -24,8 +24,8 @@ footer {
     .footer-text {
         position: absolute;
         top: 40%;
-        left: 40%;
-        transform: translate(-40%, -40%);
+        left: 50%;
+        transform: translate(-50%, -40%);
     }
 
     button {
@@ -36,7 +36,7 @@ footer {
         width: 200px;
     }
 
-    .wrapper {
+    .footer-wrapper {
         margin-top: 48%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
