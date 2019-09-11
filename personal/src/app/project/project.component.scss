@@ -1,0 +1,20 @@
+#header {
+    height: 100vh;
+}
+
+h4 {
+    &:before {
+      content: '\01F802';
+      color: black;
+      margin-right: 10px;
+    }
+    
+}
+
+.live {
+    &:after {
+        content: '\1F865';
+        color: black;
+        margin-left: 5px;
+      }
+}
