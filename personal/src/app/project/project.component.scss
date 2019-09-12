@@ -123,8 +123,33 @@ section:first-child {
 
 .project {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.project-left{
+  flex: 2;
+  margin-bottom: 40px;
+  padding-right: 40px;
+
+  h4 {
+    margin-bottom: 40px;
+  }
+}
+
+.project-right{
+  flex: 1;
+  margin-bottom: 40px;
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
 }
 
 .img {
-  flex: 100%;
+  flex-basis: 100%;
 }
