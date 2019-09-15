@@ -124,7 +124,19 @@ section:first-child {
 .project {
   display: flex;
   flex-wrap: wrap;
+
+  h1 {
+    margin: 100px 0;
+    color: $light-gray;
+  }
+
+  div {
+    &:last-child {
+        flex-basis: 100%;
+    }
+  }
 }
+
 
 .project-left{
   flex: 2;
@@ -152,4 +164,17 @@ section:first-child {
 
 .img {
   flex-basis: 100%;
+}
+
+.next {
+  background-color: $light-yellow;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  
+  button {
+    border-color: $medium-gray;
+    color: $medium-gray;
+    margin-left: auto;
+  }
 }
