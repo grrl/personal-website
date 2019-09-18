@@ -1,13 +1,13 @@
 <header>
     <nav>
         <div class="link-left">
-            <a href="#">Contact me</a>
+            <a href="#" id="text-left">Contact me</a>
         </div>
         <div class="languages">
             <a href="#">PT</a>
             <a href="#" class="active">EN</a>
         </div>
-        <div class="menu-burguer">
+        <div class="menu-burger" (click)="menuClick()">
             <svg 
                 class="menu"
                 width="43"
@@ -20,7 +20,7 @@
                 <line y1="21.5" x1="16" x2="43" y2="21.5" stroke="black" stroke-width="3"/>
             </svg>
         </div>
-        <div class="burguer-open">
+        <div class="burger-open">
             <h5>home.</h5>
             <h5>work.</h5>
             <h5>about.</h5>
