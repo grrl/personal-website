@@ -11,17 +11,21 @@ export class AppComponent implements AfterViewInit{
 
   @ViewChild('cursor', {static: false}) cursor: ElementRef;
   @ViewChild('cursor2', {static: false}) cursor2: ElementRef;
+  @ViewChild('bd', {static: false}) bd: ElementRef;
 
   globalListenFunc: Function;
+  linkListenFunc: Function;
 
   constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit() {
     this.globalListenFunc = this.renderer.listen('document', 'mousemove', e => {
       this.renderer.setStyle(this.cursor.nativeElement, 'left', e.clientX + 'px');
-      this.renderer.setStyle(this.cursor.nativeElement, 'top', e.clientY + 'px');
+      this.renderer.setStyle(this.cursor.nativeElement, 'top', e.clientY + document.scrollingElement.scrollTop + 'px');
       this.renderer.setStyle(this.cursor2.nativeElement, 'left', e.clientX + 'px');
-      this.renderer.setStyle(this.cursor2.nativeElement, 'top', e.clientY + 'px');
+      this.renderer.setStyle(this.cursor2.nativeElement, 'top', e.clientY + document.scrollingElement.scrollTop + 'px');
+      console.log(document.scrollingElement.scrollTop);
     });
+
   }
 }
