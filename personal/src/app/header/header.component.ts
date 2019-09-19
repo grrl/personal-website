@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { TimelineMax, TweenMax } from 'gsap'
+import { environment } from './../../environments/environment.prod';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+import { TimelineMax, TweenMax } from 'gsap';
 
 @Component({
   selector: 'app-header',
@@ -8,14 +9,19 @@ import { TimelineMax, TweenMax } from 'gsap'
 })
 export class HeaderComponent implements OnInit {
 
+  constructor(
+    private renderer: Renderer2,
+    private el: ElementRef
+  ) { }
+
   @ViewChild('menu', {static: false}) menuElement: ElementRef;
   @ViewChild('frstbar', {static: false}) firstBar: ElementRef;
   @ViewChild('scndbar', {static: false}) secondBar: ElementRef;
   @ViewChild('thrdbar', {static: false}) thirdBar: ElementRef;
+  @ViewChild('pacman', {static: false}) pacman: ElementRef;
 
   menu = new TimelineMax({paused: true, reversed: true});
 
-  constructor() { }
 
   ngOnInit() {
     this.init();
@@ -23,6 +29,7 @@ export class HeaderComponent implements OnInit {
 
   init() {
     this.menu.to('.burger-open', 0.5, {y: 0}, 0);
+
   }
 
   menuClick() {
@@ -50,4 +57,5 @@ export class HeaderComponent implements OnInit {
     this.secondBar.nativeElement.setAttribute('x2', '43');
     this.firstBar.nativeElement.setAttribute('x2', '43');
   }
+
 }
