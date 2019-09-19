@@ -9,7 +9,8 @@ export class AppComponent implements AfterViewInit{
 
   title = 'Deiziane Silva | Olá!';
 
-  @ViewChild('pacman', {static: false}) pacman: ElementRef;
+  @ViewChild('cursor', {static: false}) cursor: ElementRef;
+  @ViewChild('cursor2', {static: false}) cursor2: ElementRef;
 
   globalListenFunc: Function;
 
@@ -17,9 +18,10 @@ export class AppComponent implements AfterViewInit{
 
   ngAfterViewInit() {
     this.globalListenFunc = this.renderer.listen('document', 'mousemove', e => {
-      console.log(e);
-      this.renderer.setStyle(this.pacman.nativeElement, 'left', e.clientX + 'px');
-      this.renderer.setStyle(this.pacman.nativeElement, 'top', e.clientY + 'px');
+      this.renderer.setStyle(this.cursor.nativeElement, 'left', e.clientX + 'px');
+      this.renderer.setStyle(this.cursor.nativeElement, 'top', e.clientY + 'px');
+      this.renderer.setStyle(this.cursor2.nativeElement, 'left', e.clientX + 'px');
+      this.renderer.setStyle(this.cursor2.nativeElement, 'top', e.clientY + 'px');
     });
   }
 }

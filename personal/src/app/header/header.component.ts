@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
   @ViewChild('frstbar', {static: false}) firstBar: ElementRef;
   @ViewChild('scndbar', {static: false}) secondBar: ElementRef;
   @ViewChild('thrdbar', {static: false}) thirdBar: ElementRef;
-  @ViewChild('pacman', {static: false}) pacman: ElementRef;
 
   menu = new TimelineMax({paused: true, reversed: true});
 
