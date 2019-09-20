@@ -22,11 +22,11 @@
                 </div>
                 <div class="telegram">
                     <a href="https://t.me/deizianens" target="_blank">
-                        <img src="../../assets/icons/telegram.svg" alt="telegram">                    
+                        <img src="../../assets/icons/telegram.svg" alt="telegram">
                     </a>
                 </div>
             </div>
-            <a class="scroll" href="#about">
+            <a class="scroll" href="#about" (click)="handleLink()">
                 <span></span>
             </a>
         </div>
@@ -41,19 +41,19 @@
             <p>Experience using these technologies</p>
             <div class="skills">
                 <div class="html">
-                        <img src="../../assets/languages/html.svg" alt="html">
+                    <img src="../../assets/languages/html.svg" alt="html">
                 </div>
                 <div class="css">
-                        <img src="../../assets/languages/css.svg" alt="css">
+                    <img src="../../assets/languages/css.svg" alt="css">
                 </div>
                 <div class="js">
-                        <img src="../../assets/languages/js.svg" alt="js">                    
+                    <img src="../../assets/languages/js.svg" alt="js">
                 </div>
                 <div class="angular">
-                    <img src="../../assets/languages/angular.svg" alt="angular">                    
+                    <img src="../../assets/languages/angular.svg" alt="angular">
                 </div>
                 <div class="sass">
-                    <img src="../../assets/languages/sass.svg" alt="sass">                    
+                    <img src="../../assets/languages/sass.svg" alt="sass">
                 </div>
             </div>
         </div>
@@ -64,26 +64,50 @@
             <div class="projects-wrapper">
                 <div class="project">
                     <a href="#">
-                        <img src="../../assets/p1.jpg" alt="project 01">
-                        <span>Project 01</span>
+                        <figure>
+                            <img src="../../assets/p1.jpg" alt="project 01">
+                            <figcaption>
+                                <h3>Project<br>01</h3>
+                                <button class="btn">View Project</button>
+                            </figcaption>
+                        </figure>
+                        <h4>Project 01</h4>
+                    </a>
+                </div>
+                <div class="project even">
+                    <a href="#">
+                        <h4>Project 02</h4>
+                        <figure>
+                            <img src="../../assets/p2.jpg" alt="project 02">
+                            <figcaption>
+                                <h3>Project<br>02</h3>
+                                <button class="btn">View Project</button>
+                            </figcaption>
+                        </figure>
                     </a>
                 </div>
                 <div class="project">
                     <a href="#">
-                        <span>Project 02</span>
-                        <img src="../../assets/p2.jpg" alt="project 02">
+                        <figure>
+                            <img src="../../assets/p3.jpg" alt="project 03">
+                            <figcaption>
+                                <h3>Project<br>03</h3>
+                                <button class="btn">View Project</button>
+                            </figcaption>
+                        </figure>
+                        <h4>Project 03</h4>
                     </a>
                 </div>
-                <div class="project">
+                <div class="project even">
                     <a href="#">
-                        <img src="../../assets/p3.jpg" alt="project 03">
-                        <span>Project 03</span> 
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="#">
-                        <span>Project 04</span>
-                        <img src="../../assets/p4.jpg" alt="project 04">
+                        <h4>Project 04</h4>
+                        <figure>
+                            <img src="../../assets/p4.jpg" alt="project 04">
+                            <figcaption>
+                                <h3>Project<br>04</h3>
+                                <button class="btn">View Project</button>
+                            </figcaption>
+                        </figure>
                     </a>
                 </div>
             </div>
