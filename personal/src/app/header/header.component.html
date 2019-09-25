@@ -22,10 +22,10 @@
             </svg>
         </div>
         <div class="burger-open">
-            <h5>home.</h5>
-            <h5>work.</h5>
-            <h5>about.</h5>
-            <h5>contact.</h5>
+            <a routerLink="/" (click)="menuClick()"><h5>home.</h5></a>
+            <a routerLink="/work" (click)="menuClick()"><h5>work.</h5></a>
+            <a routerLink="/about" (click)="menuClick()"><h5>about.</h5></a>
+            <a routerLink="/contact" (click)="menuClick()"><h5>contact.</h5></a>
             
             <button class="btn">Download CV</button>
             <h1>Menu</h1>
