@@ -58,6 +58,12 @@ nav {
   h5 {
     text-align: center;
     color: $white;
+    transition: all 0.35s linear;
+    cursor: pointer;
+
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 
   h1 {
@@ -72,6 +78,7 @@ nav {
     transform: translate(-50%);
     margin-top: 80px;
     width: 200px;
+    
   }
 }
 
