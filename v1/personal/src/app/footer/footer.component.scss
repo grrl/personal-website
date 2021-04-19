@@ -1,0 +1,60 @@
+@import "../app.component.scss";
+
+footer {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    margin-top: 150px;
+    background-color: $light-black;
+    padding: 0 10%;
+
+    h1 {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        transform: translate(-15%, -35%);
+        color: rgba($medium-gray, 0.15);
+    }
+
+    h4, p {
+        color: $light-white;
+    }
+
+    .footer-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    button {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        width: 200px;
+    }
+
+    .footer-wrapper {
+        margin-top: 48%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        p {
+            font-size: 17px;
+        }
+
+        h4 {
+            letter-spacing: .2em;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.icons {
+    img {
+        width: 30px;
+        margin: 0 5px;
+    }
+}
